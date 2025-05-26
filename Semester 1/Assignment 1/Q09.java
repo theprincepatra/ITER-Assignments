@@ -2,25 +2,26 @@ package Assignment1;
 
 public class Q09 {
 
-    public static void main(String[] args) {
-        System.out.println(8);
-        System.out.println((float)30 / 4);
-        System.out.println(3 + '4');
-        System.out.println(2 + 5 + '7');
-        System.out.println("85" + 3 + 9);
-        System.out.println(7 + "2");
-        System.out.println('*' * 20);
-        System.out.println('a');
-        System.out.println('x' + 'y');
-    }
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println(5);
+		System.out.println((float)25/6);
+		System.out.println(5+'6');
+		System.out.println(5+7+'9');
+		System.out.println("92"+7+5);
+		System.out.println(2+"9");
+		System.out.println('#' *24);
+		System.out.println('b');
+		System.out.println('b'+'c');
+	}
 }
 // output:
-// 8
-// 7.5
-// 55
-// 56
-// 8539
-// 72
-// 1600
-// a
-// 241
+// 5
+// 4.1666665
+// 59
+// 69
+// 9275
+// 29
+// 2640
+// b
+// 197
