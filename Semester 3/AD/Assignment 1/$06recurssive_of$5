@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+class $06recurssive_of$5 {
+    // Recursive method to calculate the nth Fibonacci number
+    public static int fibonacciRecursive(int n) {
+        if (n <= 1) {
+            return n; // Base cases: F(0)=0, F(1)=1
+        } else {
+            return fibonacciRecursive(n - 1) + fibonacciRecursive(n - 2);
+        }
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the term 'N' to find in the Fibonacci Sequence: ");
+        int n = sc.nextInt();
+
+        if (n < 0) {
+            System.out.println("Fibonacci number is not defined for negative terms.");
+        } else {
+            int result = fibonacciRecursive(n);
+            System.out.println("The " + n + "th Fibonacci number is: " + result);
+        }
+        sc.close();
+    }
+}
+
+/*
+Example Output:
+Enter the term 'N' to find in the Fibonacci Sequence: 7
+The 7th Fibonacci number is: 13
+*/
