@@ -36,3 +36,9 @@ display()
 pop()
 display()
 evaluate_rpn("5 3 4 * +")
+
+# output:
+# Stack: [40, 20]
+# Popped: 20
+# Stack: [40]
+# Result: 17
