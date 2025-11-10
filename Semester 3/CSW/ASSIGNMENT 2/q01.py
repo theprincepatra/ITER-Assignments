@@ -17,3 +17,11 @@ print("Scores in descending order:", scores)
 for i in range(-3, 0):
     scores[i] = 0
 print("After replacing 3 lowest with 0:", scores)
+
+# output:
+# Average Score: 70.0
+# Minimum Score: 40
+# Maximum Score: 95
+# Scores above average: [75, 90, 80, 95]
+# Scores in descending order: [95, 90, 80, 75, 60, 50, 40]
+# After replacing 3 lowest with 0: [95, 90, 80, 75, 0, 0, 0]
