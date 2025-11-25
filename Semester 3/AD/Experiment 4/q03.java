@@ -1,3 +1,9 @@
+// 3) Write a program to find the kth smallest element from a given list of n integers. (Note: k<n)
+// Input: 15,7,22,9,18,4 k=3 Output:9
+
+
+//Ans
+
 // Constraints:
 //   k < n
 //   All integers allowed
