@@ -1,0 +1,81 @@
+{% extends "blog/base.html" %}
+
+{% block title %}Share a post{%endblock%}
+
+{% block content %}
+
+<style>
+.share-container{
+    max-width:500px;
+    margin:40px auto;
+    padding:25px;
+    background:#f9f9f9;
+    border-radius:10px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.1);
+}
+
+.share-title{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.share-form input,
+.share-form textarea{
+    width:100%;
+    padding:10px;
+    margin-top:6px;
+    margin-bottom:15px;
+    border-radius:6px;
+    border:1px solid #ccc;
+}
+
+.send-btn{
+    background:#0077ff;
+    color:white;
+    border:none;
+    padding:12px;
+    width:100%;
+    border-radius:6px;
+    font-size:16px;
+    cursor:pointer;
+}
+
+.send-btn:hover{
+    background:#005edb;
+}
+
+.success-title{
+    color:green;
+    text-align:center;
+}
+
+.success-msg{
+    text-align:center;
+}
+</style>
+
+<div class="share-container">
+
+{% if sent %}
+
+<h1 class="success-title">E-mail successfully sent ✅</h1>
+<p class="success-msg">
+"{{ post.title }}" was successfully sent to {{ form.cleaned_data.to }}.
+</p>
+
+{% else %}
+
+<h1 class="share-title">Share "{{post.title}}" by e-mail</h1>
+
+<form method="post" class="share-form" novalidate>
+{{ form.as_p }}
+
+{% csrf_token %}
+<button type="submit" class="send-btn">Send E-mail</button>
+</form>
+
+{% endif %}
+
+</div>
+
+{%endblock%}

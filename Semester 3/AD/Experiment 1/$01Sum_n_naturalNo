@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+class $01Sum_n_naturalNo {
+    public static void main(String[] args) {
+        int N, s = 0, t = 0;
+
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the nth number: ");
+        N = sc.nextInt();
+
+        while (t < N) {
+            s = s + (t + 1);
+            t++;
+        }
+
+        System.out.println("Sum of N numbers: " + s);
+        sc.close();
+    }
+}
+/*
+Example Output:
+Enter the nth number: 5
+Sum of N numbers: 15
+*/
